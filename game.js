@@ -1,4 +1,3 @@
-
 const textElement = document.getElementById('text');
 const choicesElement = document.getElementById('choices')
 
