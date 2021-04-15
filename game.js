@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 const textElement = document.getElementById('text');
 const choicesElement = document.getElementById('choices')
 
@@ -193,7 +193,6 @@ const textNodes = [
   }
 ]
 
-=======
 const textElement = document.getElementById('text');
 const choicesElement = document.getElementById('choices')
 
@@ -387,6 +386,4 @@ const textNodes = [
     ]
   }
 ]
-
->>>>>>> ea085ffef0bb59a84718569008db4725a18b26b0
 startGame()
