@@ -12,6 +12,7 @@ let updateImage= ''
 function startGame() {
 	document.getElementById("hp").innerHTML = "HP: " + hp
 	document.getElementById("strength").innerHTML = "Strength: " + strength
+	document.getElementById('currentImage').src = 'Mansion.jpg'
 	inventory = {}
 	showTextNode(1)
 }
@@ -52,10 +53,10 @@ function selectOption(option) {
   /* inventory = Object.assign(inventory, option.setState) */
   showTextNode(nextTextNodeId) /* Call showTextNode() function to pass onto the next node */
   hp = option.setHP /* Update hp value after choosing an option */
-  updateText = option.setUpdate
-  updateImage = option.setImage
-  console.log(updateText)
-  /* Rewrite values into the HP and strength sections*/
+  updateText = option.setUpdate /* Update text value after choosing an option */
+  updateImage = option.setImage /* Update image after choosing an option */
+  
+  /* Rewrite values into the HP and strength sections, feedback log and new image*/
   document.getElementById("hp").innerHTML = "HP: " + hp
   document.getElementById("strength").innerHTML = "Strength: " + strength
   document.getElementById("info").innerHTML =  "" + updateText
