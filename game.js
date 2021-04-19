@@ -15,7 +15,7 @@ function startGame() {
 	document.getElementById("strength").innerHTML = "Strength: " + strength
 	document.getElementById("team").innerHTML = "Team: " + teamMembers
 	document.getElementById("info").innerHTML =  "" + updateText
-	document.getElementById('currentImage').src = 'Mansion.jpg'
+	document.getElementById('currentImage').src = 'Mansion.png'
 	inventory = {}
 	showTextNode(1)
 }
@@ -108,16 +108,15 @@ const textNodes = [
 		setStrength: 0,
 		setUpdate: '',
 		membersLost: 0,
-		nextText: 2
-		/*setUpdate: 'You lost 20 HP!',
-		setImage: 'test.jpg',
-		membersLost: 1 */
+		nextText: 2,
+		setImage: 'MansionEntrances.png'
+
       },
     ]
   },
   {
     id: 2,
-    text: 'Great! The mansion has 3 possible entrances: One for the staff on the left (L),  the main entrance for visitors (M), and one on the right, close to the garden, that is normally used after landing the helicopter (R). Which one will you choose to begin?',
+    text: 'Great! The mansion has 3 possible entrances: One for the staff on the left (L),  the main entrance for visitors (M), and one on the right, close to the garden, that is normally used after landing the helicopter (R). Which one will you choose to begin the mission?',
     options: [
       {
         text: 'Left entrance (L)',
@@ -126,7 +125,7 @@ const textNodes = [
 		setUpdate: '',
 		membersLost: 0,
         nextText: 3,
-		/*setImage: 'mara.jpg'*/
+		setImage: 'LeftEntrance.png'
       },
       {
         text: 'Main entrance (M)',
@@ -156,6 +155,7 @@ const textNodes = [
 		setStrength: 0,
 		setUpdate: '',
 		membersLost: 0,
+		setImage: 'smallHallLowerEntrance.png',
         nextText: 6
       },
       {
