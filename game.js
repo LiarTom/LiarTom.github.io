@@ -35,7 +35,7 @@ function showTextNode(textNodeIndex) {
 textNode.options.forEach(option => {
     const button = document.createElement('button')
     button.innerText = option.text /* Inserts text in each button for each option available */
-    button.classList.add('choice')
+    button.classList.add('choice') /* Adds class choice to buttons */
     button.addEventListener('click', () => selectOption(option)) /* Adds event listener to button and links it to the selectOption() function*/
     choicesElement.appendChild(button) /* Insert the button in the choices div */
   }
@@ -54,29 +54,26 @@ function selectOption(option) {
 	updateText = ''
     return startGame()
   }
-  
-  
-  /* inventory = Object.assign(inventory, option.setState) */
-  
-  hp = hp - option.setHP /* Update hp value after choosing an option */
+
+  /* Update all values after choosing an option */
+  hp = hp - option.setHP 
   strength = strength - option.setStrength 
-  teamMembers = teamMembers - option.membersLost
+  teamMembers = teamMembers - option.membersLost 
+  
   showTextNode(nextTextNodeId) /* Call showTextNode() function to pass onto the next node */
   
-  if (teamMembers < 0) {
-	teamMembers = 0
-  }  
-  
-  /* End the game if HP reach 0*/
+  /* End the game if HP reach 0, also sets to 0 to not show negative values*/
   if (hp == 0 || hp < 0) {
 	hp = 0
 	showTextNode(99)
   }
   
+  /*sets to 0 to not show negative values*/
   if (strength < 0) {
   strength = 0
   }
   
+  /*sets to 0 to not show negative values*/
   if (teamMembers < 0) {
 	teamMembers = 0
   }
