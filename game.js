@@ -91,7 +91,6 @@ function selectOption(option) {
   document.getElementById("info").innerHTML =  "" + updateText
   document.getElementById("team").innerHTML = "Team: " + teamMembers
   document.getElementById('currentImage').src = updateImage
-  
 }
 
 
@@ -108,8 +107,9 @@ const textNodes = [
 		setStrength: 0,
 		setUpdate: '',
 		membersLost: 0,
-		nextText: 2,
-		setImage: 'MansionEntrances.png'
+		setImage: 'MansionEntrances.png',
+		nextText: 2
+		
 
       },
     ]
@@ -133,6 +133,7 @@ const textNodes = [
 		setStrength: 0,
 		setUpdate: '',
 		membersLost: 0,
+		setImage: 'MainHallEntrance.png',
         nextText: 4
       },
       {
@@ -141,6 +142,7 @@ const textNodes = [
 		setStrength: 0,
 		setUpdate: '',
 		membersLost: 0,
+		setImage: 'RightEntrance.png',
         nextText: 5
       }
     ]
@@ -164,6 +166,7 @@ const textNodes = [
 		setStrength: 0,
 		setUpdate: '',
 		membersLost: 0,
+		setImage: 'LeftEntranceRightSide.png',
         nextText: 7
       },
     ]
@@ -178,6 +181,7 @@ const textNodes = [
 		setStrength: 0,
 		setUpdate: '',
 		membersLost: 0,
+		setImage: 'MainHallUpLeft.png',
         nextText: 10
       },
 	  {
@@ -186,15 +190,17 @@ const textNodes = [
 		setStrength: 0,
 		setUpdate: '',
 		membersLost: 0,
+		setImage: 'UpperFloorFromLeft.png',
         nextText: 9
       },
 	  {
-        text: 'Reach the room on the right.',
+        text: 'Enter the room on the right.',
 		setHP: 0,
 		setStrength: 0,
 		setUpdate: '',
 		membersLost: 0,
-        nextText: 98
+		setImage: 'RightEntranceFromHall.png',
+        nextText: 18
       }
     ]
   },
@@ -208,6 +214,7 @@ const textNodes = [
 		setStrength: 35,
 		setUpdate: 'Surprise attack!',
 		membersLost: 2,
+		setImage: 'RightEntranceKill.png',
         nextText: 16
       },
 	  {
@@ -216,6 +223,7 @@ const textNodes = [
 		setStrength: 0,
 		setUpdate: '',
 		membersLost: 0,
+		setImage: 'MainHallUpRight.png',
         nextText: 17
       },
     ]
@@ -230,6 +238,7 @@ const textNodes = [
 		setStrength: 0,
 		setUpdate: '',
 		membersLost: 0,
+		setImage: 'warehouse.png',
         nextText: 8
       },
 	  {
@@ -238,6 +247,7 @@ const textNodes = [
 		setStrength: 0,
 		setUpdate: '',
 		membersLost: 0,
+		setImage: 'UpperFloorFromLeft.png',
         nextText: 9
       },
 	  {
@@ -246,6 +256,7 @@ const textNodes = [
 		setStrength: 0,
 		setUpdate: '',
 		membersLost: 0,
+		setImage: 'smallHallUpperEntrance.png',
         nextText: 10
       }
     ]
@@ -260,6 +271,7 @@ const textNodes = [
 		setStrength: 0,
 		setUpdate: '',
 		membersLost: 0,
+		setImage: 'smallHallLowerEntrance.png',
         nextText: 6
       },
       {
@@ -268,6 +280,7 @@ const textNodes = [
 		setStrength: 30,
 		setUpdate: 'Hp lost: 40 | Strength decreased by: 30 | Team members lost: 2',
 		membersLost: 2,
+		setImage: '4Terroristsroom.png',
         nextText: 15
       }
     ]
@@ -282,6 +295,7 @@ const textNodes = [
 		setStrength: 0,
 		setUpdate: '',
 		membersLost: 0,
+		setImage: 'smallHallLowerEntrance.png',
         nextText: 6
       }
     ]
@@ -296,6 +310,7 @@ const textNodes = [
 		setStrength: 50,
 		setUpdate: 'A surprise attack! Hp lost: 70 | Strength decreased by: 50 | Team members lost: All',
 		membersLost: 7,
+		setImage: 'SurpriseAttack.png',
         nextText: 20
       },
 	  {
@@ -304,6 +319,7 @@ const textNodes = [
 		setStrength: 0,
 		setUpdate: 'Hostage Found!',
 		membersLost: 0,
+		setImage: 'Rescue.png',
         nextText: 21
       },
 	  {
@@ -312,6 +328,7 @@ const textNodes = [
 		setStrength: 999,
 		setUpdate: 'You were surrounded! Game over.',
 		membersLost: 999,
+		setImage: 'Surrounded.png',
         nextText: 98
       }
     ]
@@ -326,6 +343,7 @@ const textNodes = [
 		setStrength: 0,
 		setUpdate: '',
 		membersLost: 0,
+		setImage: 'UpperFloorFromLeft.png',
         nextText: 9
       },
 	  {
@@ -334,6 +352,7 @@ const textNodes = [
 		setStrength: 10,
 		setUpdate: 'Hp lost: 15 | Strength decreased by: 10 | Team members lost: 1',
 		membersLost: 1,
+		setImage: '1TerroristroomKill.png',
         nextText: 11
       },
 	  {
@@ -342,6 +361,7 @@ const textNodes = [
 		setStrength: 20,
 		setUpdate: 'Hp lost: 0 | Strength decreased by: 20 | Team members lost: 0',
 		membersLost: 0,
+		setImage: 'smallHallUpperEntranceKill.png',
         nextText: 12
       }
 	  
@@ -357,6 +377,7 @@ const textNodes = [
 		setStrength: 0,
 		setUpdate: '',
 		membersLost: 0,
+		setImage: 'UpperFloorFromLeft.png',
         nextText: 9
       },
 	  {
@@ -365,6 +386,7 @@ const textNodes = [
 		setStrength: 0,
 		setUpdate: '',
 		membersLost: 0,
+		setImage: 'MainHallUpLeft.png',
         nextText: 14
       }
     ]
@@ -374,11 +396,12 @@ const textNodes = [
     text: 'As soon as he enters the room you hit him from behind and make him lose conciousness. You then hide his body between some plants that decorate the wall, and the next room is now clear.',
       options: [
 	  {
-        text: 'Leave the hall and head upstairs',
+        text: 'Leave this hall and head upstairs',
 		setHP: 0,
 		setStrength: 0,
 		setUpdate: '',
 		membersLost: 0,
+		setImage: 'UpperFloorFromLeft.png',
         nextText: 9
       },
 	  {
@@ -387,6 +410,7 @@ const textNodes = [
 		setStrength: 0,
 		setUpdate: '',
 		membersLost: 0,
+		setImage: '1Terroristroom.png',
         nextText: 13
       }
     ]
@@ -401,6 +425,7 @@ const textNodes = [
 		setStrength: 0,
 		setUpdate: '',
 		membersLost: 0,
+		setImage: 'UpperFloorFromLeft.png',
         nextText: 9
       },
 	  {
@@ -409,6 +434,7 @@ const textNodes = [
 		setStrength: 0,
 		setUpdate: '',
 		membersLost: 0,
+		setImage: 'MainHallUpLeft.png',
         nextText: 14
       },
     ]
@@ -423,6 +449,7 @@ const textNodes = [
 		setStrength: 0,
 		setUpdate: '',
 		membersLost: 0,
+		setImage: 'UpperFloorFromHall.png',
         nextText: 25
       },
 	  {
@@ -431,6 +458,7 @@ const textNodes = [
 		setStrength: 0,
 		setUpdate: '',
 		membersLost: 0,
+		setImage: 'RightEntranceFromHall.png',
         nextText: 18
       },
 	  
@@ -446,6 +474,7 @@ const textNodes = [
 		setStrength: 0,
 		setUpdate: '',
 		membersLost: 0,
+		setImage: 'smallHallLowerEntrance.png',
         nextText: 6
       },
 	  {
@@ -454,6 +483,7 @@ const textNodes = [
 		setStrength: 0,
 		setUpdate: '',
 		membersLost: 0,
+		setImage: 'MainHallDownLeft.png',
         nextText: 14
       },
 	  
@@ -469,6 +499,7 @@ const textNodes = [
 		setStrength: 0,
 		setUpdate: '',
 		membersLost: 0,
+		setImage: 'MainHallUpRight.png',
         nextText: 17
       },
 	  {
@@ -477,6 +508,7 @@ const textNodes = [
 		setStrength: -20,
 		setUpdate: 'Hp and streangth increased by 20.',
 		membersLost: 0,
+		setImage: 'MainHallUpRight.png',
         nextText: 17
       },
     ]
@@ -491,6 +523,7 @@ const textNodes = [
 		setStrength: 0,
 		setUpdate: '',
 		membersLost: 0,
+		setImage: 'UpperFloorFromHall.png',
         nextText: 25
       },
 	  {
@@ -499,21 +532,87 @@ const textNodes = [
 		setStrength: 0,
 		setUpdate: '',
 		membersLost: 0,
-        nextText: 10
+		setImage: 'MainHallUpLeft.png',
+        nextText: 101
       },
 	  
     ]
   }, 
   {
+    id: 101,
+    text: 'As you approach the door, you hear one of the terrorists speak through a radio. The sound is not very clear, but you were able to hear that the hostage is on the upper floor, and that he is well protected, but there will be a change of guards soon. He then leaves the radio and you can hear him coming towards your door.',
+    options: [
+      {
+        text: 'Leave the door and head upstairs before he finds you',
+		setHP: 0,
+		setStrength: 0,
+		setUpdate: '',
+		membersLost: 0,
+		setImage: 'UpperFloorFromHall.png',
+        nextText: 25
+      },
+	  {
+        text: 'Enter the room and face the terrorist head on',
+		setHP: 15,
+		setStrength: 10,
+		setUpdate: 'Hp lost: 15 | Strength decreased by: 10 | Team members lost: 1',
+		membersLost: 1,
+		setImage: '1TerroristroomKill.png',
+        nextText: 111
+      },
+	  {
+        text: 'Wait until he opens the door and surprise attack him',
+		setHP: 0,
+		setStrength: 20,
+		setUpdate: 'Hp lost: 0 | Strength decreased by: 20 | Team members lost: 0',
+		membersLost: 0,
+		setImage: 'MainHallUpLeftKill.png',
+        nextText: 121
+      }
+	  
+    ]
+  },
+  {
+    id: 111,
+    text: 'You and the rest of your team enter the room and attack the terrorist, but he had a gun and managed to shoot one of the members of your team and kill him before you could stop him. Unfortunately, other terrorists have heard the shots and will probably come and check, so you have to move!',
+    options: [
+      {
+        text: 'Go back and head upstairs',
+		setHP: 0,
+		setStrength: 0,
+		setUpdate: '',
+		membersLost: 0,
+		setImage: 'UpperFloorFromHall.png',
+        nextText: 25
+      }
+    ]
+  },
+    {
+    id: 121,
+    text: 'As soon as he enters the room you hit him from behind and make him lose conciousness. You then hide his body between some plants that decorate the wall, and the next room is now clear.',
+      options: [
+	  {
+        text: 'Leave this hall and head upstairs',
+		setHP: 0,
+		setStrength: 0,
+		setUpdate: '',
+		membersLost: 0,
+		setImage: 'UpperFloorFromLeft.png',
+        nextText: 9
+      },
+    ]
+  },
+  {
     id: 18,
     text: 'You enter a room full of equipment used for helicopter flights. There seems to be a small room on the right',
     options: [
       {
-        text: 'Move towards that door',
+        text: 'Enter that room',
 		setHP: 30,
 		setStrength: 35,
 		setUpdate: 'Surprise attack!',
 		membersLost: 2,
+		setImage: 'RightEntranceKill.png',
         nextText: 19
       },
 	  {
@@ -522,6 +621,7 @@ const textNodes = [
 		setStrength: 0,
 		setUpdate: '',
 		membersLost: 0,
+		setImage: 'UpperFloorFromHall.png',
         nextText: 25
       },
     ]
@@ -536,6 +636,7 @@ const textNodes = [
 		setStrength: 0,
 		setUpdate: '',
 		membersLost: 0,
+		setImage: 'UpperFloorFromHall.png',
         nextText: 25
       },
 	  {
@@ -544,6 +645,7 @@ const textNodes = [
 		setStrength: -20,
 		setUpdate: 'Hp and streangth increased by 20.',
 		membersLost: 0,
+		setImage: 'UpperFloorFromHall.png',
         nextText: 25
       },
     ]
@@ -558,6 +660,7 @@ const textNodes = [
 		setStrength: 0,
 		setUpdate: '',
 		membersLost: 0,
+		setImage: 'UpperFloorAfterRoom.png',
         nextText: 22
       }, 
     ]
@@ -581,6 +684,7 @@ const textNodes = [
 		setHP: 0,
 		setStrength: 0,
 		setUpdate: 'Hostage Found!',
+		setImage: 'Rescue.png',
 		membersLost: 0,
         nextText: 21
       },
@@ -590,6 +694,7 @@ const textNodes = [
 		setStrength: 999,
 		setUpdate: 'You were surrounded! Game over.',
 		membersLost: 999,
+		setImage: 'Surrounded.png',
         nextText: 98
       }
     ]
@@ -604,6 +709,7 @@ const textNodes = [
 		setStrength: 0,
 		setUpdate: 'Hostage Found!',
 		membersLost: 0,
+		setImage: 'Rescue.png',
         nextText: 21
       },
 	  {
@@ -612,6 +718,7 @@ const textNodes = [
 		setStrength: 999,
 		setUpdate: 'You were surrounded! Game over.',
 		membersLost: 999,
+		setImage: 'Surrounded.png',
         nextText: 98
       },
 	  {
@@ -620,6 +727,7 @@ const textNodes = [
 		setStrength: 50,
 		setUpdate: 'A surprise attack! Hp lost: 70 | Strength decreased by: 50 | Team members lost: All',
 		membersLost: 7,
+		setImage: 'SurpriseAttack.png',
         nextText: 20
       }
     ]
