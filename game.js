@@ -1,3 +1,6 @@
+/* https://www.youtube.com/watch?v=R1S_NhKkvGA&ab_channel=WebDevSimplified gave me lots of ideas to build this code, mainly how to generate the buttons and the list containing all nodes for the game */
+
+
 const textElement = document.getElementById('text') /* Assign the element #text to textElement for manipulation */
 const choicesElement = document.getElementById('choices') /* Assign the #choices element to choicesElement for manipulation */
 
