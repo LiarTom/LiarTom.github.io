@@ -99,7 +99,7 @@ Each option can also modify the HP/strength value and/or add items to inventory*
 const textNodes = [
   {
     id: 1,
-    text: 'Welcome! Around 10am a group of terrorist kidnapped the son of the president and hid inside the mansion that you can see in the picture. Your job is to infiltrate the mansion and rescue him. We will send four of our best men to help you in this task. Keep in mind that the terrorist will show no mercy. Can you do it?',
+    text: 'Welcome! Around 10am a group of terrorists kidnapped the son of the president and hid him inside the mansion that you can see in the picture. Your job is to infiltrate the mansion and rescue him. We will send four of our best men to help you in this task. Keep in mind that the terrorist will show no mercy. Can you do it?',
     options: [
       {
         text: 'Yes!',
